@@ -59,6 +59,8 @@ public class JMysq01 {
         return false;
     }
 
+    
+    
     public static int creaTab(Connection c) throws SQLException {
         Statement stmt = null;
         stmt = c.createStatement();
