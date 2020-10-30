@@ -1,0 +1,27 @@
+Microsoft Windows XP [Versione 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+H:\>c:
+C:\>cd Programmi\AppServ\MySQL\bin
+
+C:\Programmi\AppServ\MySQL\bin>mysql -h edu-x01 -u plab01 -p redhat
+Enter password: ******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 395
+Server version: 5.0.45 Source distribution
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> create database dbamici;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use dbamici;
+Database changed
+mysql> create table amici 
+(it integer auto_increment primary key , 
+cognome char(20), 
+nome char(20) , 
+foto blob);
+Query OK, 0 rows affected (0.05 sec)
+
+mysql>
